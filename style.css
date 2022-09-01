@@ -1,60 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 :root{
-    --primary-background : #fff0e8;
-    --primary-color : #021401;
+    --background-color: #FAF4E1;
+    --secondary-color : #193152;
+    --primary-color:  #EA5F08;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 body{
-    background-color: var(--primary-background);
+    background-color: var(--background-color);
     color: var(--primary-color);
     font-family: 'IBM Plex Sans', sans-serif;
 }
 h1{
     text-align: center;
 }
-
-.container{
-    width: 40%;
-    margin: auto;
+.container-center{
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+        padding: 2rem 1rem;
+        text-align: left;
 }
+h1{
+    box-sizing: border-box;
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+p{
+    font-size: 1rem;
+    margin:  2rem auto 1rem;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    color: var(--secondary-color);
+    padding: 0rem 0.5rem;
+    text-align: center;
+}
+
 input, label{
     display: block;
 }
+
 label{
-    width: 100%;
-    margin: 0.5rem auto;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--secondary-color);
 }
 input{
-    margin-bottom: 0.5rem;
     width: 100%;
-    margin: 0.5rem  0 1.5rem 0;
     padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
 }
+
+
 #check-number{
+    padding: 0.5rem 3rem;
     display: block;
-    margin: auto;
-    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 1rem auto 0;
     background: transparent;
-    color: var(--primary-color);
-    border-color:  var(--primary-color);
-    border-width: 0.1rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
+    border-color:  var(--secondary-color);
+    border-width: 0.05rem;
+    border-radius: 0.3rem;
+    color: var(--secondary-color);
+    cursor: pointer;
 }
 #check-number:hover{
-    background-color: var(--primary-color);
-    color: var(--primary-background);
+    background-color: var(--secondary-color);
+    color: var(--background-color);
 }
+
 #output-box{
     text-align: center;
     margin-top: 2rem;
-    color: #e3824d;
+    color: var(--primary-color);
     font-weight: 600;
     font-size: large;
 }
 
-@media only screen and (max-width: 768px) {
-    .container{
-        width: 80%;
-        margin: auto;
-    }
-  }
+.footer{
+    padding: 1rem;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.footer h4{
+   margin-bottom: 0.2rem; 
+   color: var(--secondary-color);
+   font-weight: 400;
+   font-size: 0.8rem;
+}
+.footer a{
+    text-decoration: none;
+    color: #EA5F08;
+    font-weight: 500;
+   font-size: 0.8rem;
+ }
+ .list-non-bullet{
+    list-style: none;
+    padding: 0;
+}
+.list-item-inline{
+    display: inline;
+    padding: 0rem 0.5rem ;
+}
+.link{
+    color: var(--secondary-color) !important;
+    font-weight: 400 !important;
+}

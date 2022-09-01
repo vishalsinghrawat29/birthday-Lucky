@@ -3,6 +3,10 @@ const luckyNumber = document.querySelector("#lucky-number");
 const checkNumber = document.querySelector("#check-number");
 const outputBox = document.querySelector("#output-box");
 
+// Notice to client
+alert("Please note that we are not storing your data anywhere"); 
+
+
 function compareValues(sum,luckyNumber){
     if(sum%luckyNumber === 0){
         outputBox.innerText = "Your birthday is lucky 🎊";
