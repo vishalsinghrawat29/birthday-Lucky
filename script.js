@@ -8,10 +8,17 @@ alert("Please note that we are not storing your data anywhere");
 
 
 function compareValues(sum,luckyNumber){
-    if(sum%luckyNumber === 0){
-        outputBox.innerText = "Your birthday is lucky 🎊";
+    if (sum == 0) {
+        outputBox.innerText = "Please Select a Date ";
+    }
+    else if (luckyNumber <= 0) {
+        outputBox.innerText = "Lucky number should be greater than zero";
     }else{
-        outputBox.innerText = "Your birthday is not lucky 💔";
+        if(sum%luckyNumber === 0){
+            outputBox.innerText = "Your birthday is lucky 🎊";
+        }else{
+            outputBox.innerText = "Your birthday is not lucky 💔";
+        }
     }
 }
 
@@ -21,7 +28,7 @@ function checkBirthIsLucky(){
     if(sum && dob){
         compareValues(sum, luckyNumber.value);
     }else{
-        outputBox.innerText = "Please enter both the fields ✍️";
+        outputBox.innerText = "Please enter Date and Lucky Number ✍️";
     }
 }
 
